@@ -1,6 +1,10 @@
 package integers
 
-import "testing"
+import (
+	"testing"
+
+	"fmt"
+)
 
 func TestAdder(t *testing.T) {
 	assertCorrectMessage := func(t testing.TB, got, want int) {
@@ -30,4 +34,9 @@ func TestAdder(t *testing.T) {
 
 		assertCorrectMessage(t, sum, expected)
 	})
+}
+
+func ExampleAdder() {
+	fmt.Println(Add(5, 7))
+	// Output: 12
 }
