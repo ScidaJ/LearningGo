@@ -23,8 +23,8 @@ func TestRepeat(t *testing.T) {
 }
 
 func ExampleRepeat() {
-	fmt.Println(Repeat("b"))
-	// Output: bbbbb
+	fmt.Println(Repeat("c"))
+	// Output: ccccc
 }
 
 func BenchmarkRepeat(b *testing.B) {
